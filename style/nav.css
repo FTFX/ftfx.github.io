@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    color: white;
+    padding: 0% 5% 0% 5%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    backdrop-filter: blur(10px);
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+nav div {
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+nav div:first-child~div a:hover {
+    color: skyblue;
+}
+
+nav div:first-child {
+    background-image: url(../image/logo-background.webp);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    font-size: xx-large;
+    transition: ease-in-out 0.2s;
+}
+
+nav div:first-child:hover {
+    text-shadow: 0 0 20px white;
+}
+
+nav div:last-child svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    fill: white;
+    transition: fill 0.3s;
+}
+
+nav div:last-child svg:hover {
+    fill: skyblue;
+}
